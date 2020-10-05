@@ -1,0 +1,10 @@
+package br.com.ecommerce.beans;
+
+public class ImplementarVendaConstrutor {
+
+	public static void main(String[] args) {
+		Venda objeto = new Venda():
+
+	}
+
+}

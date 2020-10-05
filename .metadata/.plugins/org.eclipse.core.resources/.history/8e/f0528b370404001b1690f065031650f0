@@ -1,0 +1,26 @@
+package br.com.lojauati.modelo;
+
+public class Televisao {
+	// sintaxe para criacao de metodos no java
+	// <modificador> <tipo do retorno> <nome do metodo> (<tipo do param> <nome do param>) {...} 
+	// modificadores do diagrama UML -> private (-) public (+) ...
+	
+	private String statusAtual;
+	private int chanelAtual;
+	private int volumAtual;
+	
+	public String exibirTudo() {
+		return
+				"Status Atual......:" + statusAtual + "\n" +
+				"Canal Atual.......:" + chanelAtual + "\n"       +
+				"Volume Atual......:" + volumAtual;
+	}
+	//
+	public void preencherComando(String comando) {
+		if (comando!=statusAtual)
+		statusAtual=comando;
+		}
+	//
+	
+}
+

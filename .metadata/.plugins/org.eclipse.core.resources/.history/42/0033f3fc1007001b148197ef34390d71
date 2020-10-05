@@ -1,0 +1,16 @@
+package br.com.universidade_leonel.implementacao;
+
+import br.com.universidade_leonel.modelo.Formacao;
+
+public class TesteFinal {
+
+	public static void main(String[] args) {
+		Formacao f = new Medio();
+		f.setValor(5000);;
+		f.calcularMensalidade((float) 0.05));
+		System.out.println(f.calcularMensalidade((float) 0.05));
+		System.out.println(f.getDuracao());
+
+	}
+
+}

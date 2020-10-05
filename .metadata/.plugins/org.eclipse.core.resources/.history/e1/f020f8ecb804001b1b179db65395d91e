@@ -1,0 +1,18 @@
+package br.com.ecommerce.beans;
+
+public class ImplementarVenda {
+	
+	public static String f(String msg) {
+		return Float.parseFloat(f(msg));
+	}
+	public static String i(String msg) {
+		return Integer.parseInt(s(msg));
+	}
+	public static String s(String msg) {
+		return JOptionPane.showInputDialog(msg).toUpperCase();
+	}
+	public static void main(String[] args) {
+		
+		Venda venda = new Venda
+	}
+}

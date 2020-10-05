@@ -1,0 +1,10 @@
+package br.com.universidade_leonel.implementacao;
+
+public class Testeprofessor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

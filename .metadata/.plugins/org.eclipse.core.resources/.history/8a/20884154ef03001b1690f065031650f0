@@ -1,0 +1,15 @@
+package br.com.lojauati.teste;
+
+import br.com.lojauati.modelo.Elevador;
+
+public class Testeelevador {
+
+	public static void main(String[] args) {
+		
+		Elevador objeto = new Elavdor(); // instanciando (atribuindo um valor) o objeto
+		objeto.preencherTudo("mclaren", (float) 1500000.50, 6000);
+		System.out.println(objeto.exibirTudo());
+		System.out.println(objeto.exibirPromocao());
+		System.out.println(objeto.exibirPromocao(50));
+	}
+}

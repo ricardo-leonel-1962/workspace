@@ -1,0 +1,37 @@
+package br.com.universidade_leonel.modelo;
+
+public class Bacharelado extends Formacao {
+	/* Design Patterns (padroes de melhores praticas para projetos com OO)
+	 * DTO (Data Transfer Object) -> melhores praticas para os modelos
+	 * 1o - sugere q todos atributos devem ser privados
+	 * 2o - sugere q cada atributo deve ter seu metodo (getter=input(preencher) e setter=output(exibir)) 
+	 * 3o - sugere q  
+	 *--------------------------------------------------------------------------------------------------
+	*/
+	
+	private String projetoConclusao;
+	private int cargaHorarioEstagio;
+	
+	public void setAll(String projetoConclusao, int cargaHorarioEstagio) {
+		this.projetoConclusao = projetoConclusao;
+		this.cargaHorarioEstagio = cargaHorarioEstagio;
+	}
+	
+	
+	public String getProjetoConclusao() {
+		return projetoConclusao;
+	}
+	public void setProjetoConclusao(String projetoConclusao) {
+		this.projetoConclusao = projetoConclusao;
+	}
+	public int getCargaHorarioEstagio() {
+		return cargaHorarioEstagio;
+	}
+	public void setCargaHorarioEstagio(int cargaHorarioEstagio) {
+		this.cargaHorarioEstagio = cargaHorarioEstagio;
+	}
+	
+	
+
+}
+

@@ -1,0 +1,23 @@
+package Repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ExercicioGeral {
+
+	public static void main(String[] args) {
+		/*
+		 * Solicitar nome e idade e perguntar se quer continuar
+		 * exibir a pessoa + velha (nome) + nova + qtde das maiores de idade (1)
+		 * media de idade de todas (2)
+		 */
+		char resposta = 0;
+		String nome = "";
+		int idade = 0;
+		do {
+			nome = JOptionPane.showInputDialog("Nome: ");
+			idade = Integer.parseInt(JOptionPane.showInputDialog("Idade: "));
+		resposta = JOptionPane.showInputDialog("Digite S para continuar: ").toUpperCase().charAt(0);
+		}while(resposta=='S');
+	}
+
+}

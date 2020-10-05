@@ -1,0 +1,56 @@
+package br.com.universidade_leonel.modelo;
+
+public class Professor {
+	/* Design Patterns (padroes de melhores praticas para projetos com OO)
+	 * DTO (Data Transfer Object) -> melhores praticas para os modelos
+	 * 1o - sugere q todos atributos devem ser privados
+	 * 2o - sugere q cada atributo deve ter seu metodo (getter=input(preencher) e setter=output(exibir)) 
+	 * 3o - sugere q  
+	 *--------------------------------------------------------------------------------------------------
+	*/
+	private int id;
+	private String nome;
+	private float valorHora;
+	private String formacao;
+	// para exibir todas as informacoes ao mesmo tempo - criado manualmente
+			public String getAll() {
+				return
+						"Id.........: " + id + "\n" +
+						"Nome.......: " + nome + "\n" +
+						"Valor Hora.: " + valorHora + "\n" +
+						"Formacao...: " + formacao;
+			}
+	// para preencher todas as informacoes ao mesmo tempo - criado manualmente
+		public void setAll(int p1, String p2, float p3, String p4) {
+			id=p1;
+			nome=p2;
+			valorHora=p3;
+			formacao=p4;
+		}
+	//
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public float getValorHora() {
+		return valorHora;
+	}
+	public void setValorHora(float valorHora) {
+		this.valorHora = valorHora;
+	}
+	public String getFormacao() {
+		return formacao;
+	}
+	public void setFormacao(String formacao) {
+		this.formacao = formacao;
+	}
+	
+}

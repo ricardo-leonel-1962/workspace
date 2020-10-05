@@ -1,0 +1,26 @@
+package Repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioRepeticao {
+
+	public static void main(String[] args) {
+		/*
+		 * Jogador 1 digita 1 numero
+		 * Jogador 2 tenta descobrir o numero
+		 * Parabens quando descobrir
+		 * Atualizacoes:
+		 * - Jogador2 recebe dica para descobrir o numero
+		 * - ao fim exibir a qtde de tentativas
+		 */
+		char errou = 0;
+		do {
+			int valor1 = Integer.parseInt(JOptionPane.showInputDialog("Numero secreto: "));
+			int valor2 = Integer.parseInt(JOptionPane.showInputDialog("Descubra o numero: "));
+			if (valor1!=valor2) {
+				System.out.println("Errou");
+			}else
+				System.out.println("Acertou");
+			}while(errou==0);
+	}
+}

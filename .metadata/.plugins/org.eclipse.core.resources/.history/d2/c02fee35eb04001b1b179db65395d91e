@@ -1,0 +1,53 @@
+package br.com.universidade_leonel.implementacao;
+/*
+ * DTO => Modelo / Beans / JavaBeans
+ * 1o - sugere q todos atributos devem ser privados
+ * 2o - sugere q cada atributo deve ter seu metodo (getter=input(preencher) e setter=output(exibir)) 
+ * 3o - sugere q toda classe deve ter 2 contrutores (1 vazio e outro com todos atributos)
+ *--------------------------------------------------------------------------------------------------
+ */
+public class Formacao {
+	private float valor;
+	private String descricao;
+	private int duracao;
+
+	public Formacao() {
+
+	}
+	public Formacao(int valor, String descricao, int duracao) {
+		this.valor = valor;
+		this.descricao = descricao;
+		this.duracao = duracao;
+	}
+	public String getAll() {
+		return
+				"Valor....: " + valor + "\n" +
+				"Descricao: " + descricao + "\n" +
+				"Duracao..: \n" + duracao;
+	}
+	public void setAll(int i, String n, Endereco e) {
+		id =i;
+		nome=n;
+		endereco=e;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public Endereco getEndereco() {
+		return endereco;
+	}
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+
+}
+

@@ -1,0 +1,32 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class ExemploProduto {
+
+	public static void main(String[] args) {
+		// Solicitar os dados:
+		// Nome do Produto
+		// Qtde
+		// Valor
+		// Exibir o total e o nome do produto
+		// Exibir o total com 10% de desconto
+		
+		String produto = "";
+		int qtde = 0;
+		double valor = 0;
+		double total = 0;
+		double desconto = 0;
+					
+		produto = JOptionPane.showInputDialog("Produto: ");
+		qtde = Integer.parseInt(JOptionPane.showInputDialog("Quantidade: "));
+		valor = Double.parseDouble(JOptionPane.showInputDialog("Valor: "));
+		
+		
+		desconto = (total * qtde) * 0.9;
+		System.out.println("Produto..: " + produto + " Valor:" + total);
+		System.out.println("Total com 10% de desconto: " + desconto);
+		
+	}
+
+}

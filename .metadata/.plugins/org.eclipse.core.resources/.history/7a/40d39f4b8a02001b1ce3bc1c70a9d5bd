@@ -1,0 +1,32 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class Execrcio2 {
+
+	public static void main(String[] args) {
+		// Hotel tem 80.00 de diaria
+		// Taxas de Servico
+		// 1. se num diarias >15 taxa =5.50
+		// 2. se num diarias =15 taxa =6.00
+		// 3. se num diarias <15 taxa =8.00
+		// Apresentar a conta do Cliente
+		// ---------------------------------------------------------------------
+		String nome = JOptionPane.showInputDialog("Nome do Cliente: ");
+		short qdiaria = Short.parseShort(JOptionPane.showInputDialog("Qtde de diarias: "));
+		float tdiaria = 0;
+		
+		if (qdiaria>15) {
+			tdiaria = 80 + (5.5 * qdiaria);
+		}else if (qdiaria=15) {
+			tdiaria = 80 + (6 * qdiaria);
+		}else {
+			tdiaria = 80 + (8 * qdiaria);
+		}
+		System.out.println("Nome do Cliente: " + nome);
+		System.out.println("Diarias: " + qdiaria);
+		System.out.printf("Total: %.2f\n", + tdiaria));
+						
+	} // fecha o metodo
+
+} // fecha a classe  

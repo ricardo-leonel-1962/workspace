@@ -1,0 +1,61 @@
+package br.com.universidade_leonel.modelo;
+
+import br.com.universidade_leonel.padroes.PadraoFormacao;
+
+public class Medio extends Formacao implements PadraoFormacao {
+	/* Design Patterns (padroes de melhores praticas para projetos com OO)
+	 * DTO (Data Transfer Object) -> melhores praticas para os modelos
+	 * 1o - sugere q todos atributos devem ser privados
+	 * 2o - sugere q cada atributo deve ter seu metodo (getter=input(preencher) e setter=output(exibir)) 
+	 * 3o - sugere q  
+	 *--------------------------------------------------------------------------------------------------
+	*/
+	
+
+	private int tipo;
+	
+	public String getAll() {
+		return
+				super.getAll() + "\n" +
+				"Tipo:" + tipo;
+	}
+	
+	public void setAll() {}
+		
+	public void setAll(float valor, String descricao, int duracao, int tipo) {
+		super.setAll(valor, descricao, duracao);
+		this.tipo = tipo;
+	}
+	
+	public Medio(float valor, String descricao, int duracao, int tipo) {
+		super(valor, descricao, duracao);
+		this.tipo = tipo;
+	}
+
+	public Medio() {
+		super();
+	}
+
+	public void setAll(int tipo) {
+		this.tipo = tipo;
+	}
+	
+	public int getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(int tipo) {
+		this.tipo = tipo;
+	}
+
+	@Override
+	public double calcularMensalidade(float fator) {
+		return getValor()/36 * fator;
+	}
+
+	@Override
+	public void definirDuracao() {
+		setDuracao(36);		
+	}
+	
+}

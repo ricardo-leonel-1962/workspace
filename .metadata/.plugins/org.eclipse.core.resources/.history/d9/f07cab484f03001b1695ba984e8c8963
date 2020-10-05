@@ -1,0 +1,17 @@
+package br.com.lojauati.modelo;
+
+public class Formula1 {
+	// modificadores do diagrama UML
+	// private e o - no diagrama UML
+	private String escuderia;
+	private float valor;
+	private int rpm;
+	public String exibirEscuderia() {
+		return escuderia;
+	}
+	// sintaxe para criacao de metodos no java
+	// <modificador> <tipo do retorno> <nome do metodo> (<tipo do param> <nome do param>) {...} 
+	public void preencherEscuderia(String parametro) {
+		escuderia = parametro.toUpperCase();
+	}
+}

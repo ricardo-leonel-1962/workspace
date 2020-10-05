@@ -1,0 +1,31 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class Execrcio1 {
+
+	public static void main(String[] args) {
+		// Pedir nome do cliente, valor investido, tempo (anos) de fidelidade
+		// regiao (Brasil) onde mora
+		// Se a regiao for sul ou sudeste (somar 20% no tempo de fidelidade)
+		// Se o valor investido for menor 1000, acrescer 1.5% no valor
+		// Se o valor investido for entre 1000 e 5000 acrescer 2%
+		// Se o valor investido for > 5000 acrescer 3%
+		// Se a fidelidade >5 anos acrescer 1% no valor investido
+		// No final exibir o valor investido atualizado de acordo com o perfil
+		// do usuario e a diferen'ca que foi obtido entre o valor investido e o valor atual (2h40)
+		// depois lista 2 do github
+		String nomec = JOptionPane.showInputDialog("Nome do Cliente: ");
+		float valori = Float.parseFloat(JOptionPane.showInputDialog("Valor a investir: "));
+		float tempof = Float.parseFloat(JOptionPane.showInputDialog("Tempo de investimento (anos): "));
+		String regiao = JOptionPane.showInputDialog("Regiao do Brasil: ");
+		if (regiao=="sul" || regiao=="sudeste") {
+			float tempob =  (tempof * (float) 1.2);
+			System.out.println(tempob);
+		}
+		
+		
+		
+	}
+
+}

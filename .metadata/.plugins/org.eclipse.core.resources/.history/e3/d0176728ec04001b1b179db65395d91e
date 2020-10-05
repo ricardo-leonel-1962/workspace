@@ -1,0 +1,44 @@
+package br.com.universidade_leonel.implementacao;
+
+import br.com.universidade_leonel.modelo.Bacharelado;
+import br.com.universidade_leonel.modelo.Endereco;
+import br.com.universidade_leonel.modelo.Formacao;
+import br.com.universidade_leonel.modelo.Magica;
+import br.com.universidade_leonel.modelo.Medio;
+
+public class ImplementarFormacao {
+
+	public static void main(String[] args) {
+		Formacao p = new Bacharelado();
+
+		char opcao = Magica.s("Digite\n<1> Medio\n<2> Bacharelado\n<3> Pos").charAt(0);
+		Formacao formacao = null;
+		if (opcao=='1') {
+			formacao = new Medio(
+					Magica.i("Tipo"),
+							),
+					);
+		}else if (opcao=='2') {
+			cliente = new PessoaFisica(
+					Magica.i("ID"),
+					Magica.s("Nome"),
+					new Endereco(
+							Magica.s("Logradouro"),
+							Magica.s("Bairro"),
+							Magica.s("Cidade"),
+							Magica.s("Estado"),
+							Magica.s("CEP"),
+							Magica.s("Numero"),
+							Magica.s("Complemento")
+							),
+					Magica.s("CPF"),
+					Magica.s("RG"),
+					Magica.s("Nascimento")
+					);
+		}else {
+			System.out.println("Opcao Invalida");
+		}
+		System.out.println(cliente.getAll());
+	}
+
+}

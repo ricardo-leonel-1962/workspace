@@ -1,0 +1,32 @@
+package variaveis;
+
+public class Variavel {
+    // Valiavel e um espaco temporario na memoria RAM onde
+	// voce armazena UM dado.
+	public static void main(String[] args) {
+	    // Sintaxe para criar variaveis
+		// <tipo dado>  <nome da variavel>
+		// numerico: dado utilizado em operacao matematica (hexa tem letra) e/ou dado critico
+		// para consulta pois com numero a busca e muita mais rapida (13 combinacoes apenas -
+		// 0 a 9 . , -
+		// alfanumerico: nao e utilizado para operacao matematica (cep: 05573-900)
+		// CEP (contexto de aplicacao que nao tem CEP como pesquisa principal)
+		// . casa decimal e , casa de milhares (padrao americano)
+		String nome="";
+		int idade = 0;
+		double altura = 0;
+		
+		nome = "Ricardo da Silva Leonel";
+		idade = 58;
+		altura = 1.74;
+		
+		System.out.print(nome);
+		System.out.print(idade);
+		System.out.println(altura);
+		
+		System.out.println("Nome..: " + nome);
+		System.out.println("Idade.: " + idade);
+		System.out.println("Altura: " + altura);
+	}
+
+}

@@ -1,0 +1,18 @@
+package br.com.lojauati.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.lojauati.modelo.Elevador;
+
+public class Testeelevador {
+
+	public static void main(String[] args) {
+		
+		Elevador objeto = new Elevador(); // instanciando (atribuindo um valor) o objeto
+		// input
+		objeto.preencherQpessoas(Integer.parseInt(JOptionPane.showInputDialog("Capacidade Maxima: ")));
+		// output	
+		System.out.println(objeto.exibirTudo());
+		
+	}
+}
